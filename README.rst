@@ -22,3 +22,8 @@ License
 Public Domain とします．
 
 ただし cd_eject.png は http://findicons.com/icon/159627/cd_eject?id=340303 からもらってきたので CC-BY です．
+
+Reference
+---------
+- http://mattn.kaoriya.net/software/lang/ruby/20130110212633.htm
+- http://eject.kokuda.org/
