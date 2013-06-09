@@ -8,7 +8,12 @@ Plugin.create :eject do
           icon: "#{File.dirname(__FILE__)}/cd_eject.png",
           role: :window) do |opt|
     Thread.new {
-      system("eject")
+      system("eject -T #{UserConfig[:eject_device]}")
     }
+  end
+
+  UserConfig[:eject_device] ||= ''
+  settings 'eject' do
+    fileselect 'Device', :eject_device
   end
 end
